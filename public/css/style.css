@@ -1,0 +1,103 @@
+:root {
+--VeryDarkBlue: hsl(233, 47%, 7%);
+--DarkDesaturatedBlue: hsl(244, 38%, 16%);
+--SoftViolet: hsl(277, 64%, 61%);
+--White: hsl(0, 0%, 100%);
+--SlightlyTransparentWhite: hsla(0, 0%, 100%, 0.75);
+--SlightlyTransparentWhite: hsla(0, 0%, 100%, 0.6);
+--font-inter: 'Inter', sans-serif;
+--font-lexend: 'Lexend Deca', sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 375px;
+  background-color: var(--VeryDarkBlue);
+  color: var(--White);
+  font-size: 15px;
+  margin: auto;
+}
+
+main.container {
+  background-color: var(--DarkDesaturatedBlue);
+  text-align: center;
+  border-radius: 10px 10px;
+  margin: 3rem 1rem;
+}
+
+/* Section 1 (photo) */
+
+section.photo {
+  background: url('../images/image-header-mobile.jpg') no-repeat ;
+  height: 300px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+}
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  background: var(--SoftViolet);
+  opacity: 0.4;
+}
+
+/* Section 2 (insights)*/
+
+section.insights {
+display: flex;
+flex-direction: column;
+padding: 3.5rem;
+}
+.insights span {
+  color: var(--SoftViolet)
+}
+
+/* Title and review*/
+.texts h1 {
+padding-bottom: 1.5rem;
+font-family: var(--font-inter);
+font-weight: 700;
+}
+
+.texts p {
+  padding-bottom: 1.8rem;
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: smaller;
+  line-height: 1.5rem;
+  opacity: 0.6;
+}
+
+/* Applications */
+
+.app-container {
+  padding: 1.5rem;
+}
+p.figure {
+  font-family: var(--font-inter);
+  font-weight: 700;
+  font-size:  1.2rem;
+  padding-bottom: 0.5rem;
+}
+p.text {
+  text-transform: uppercase;
+  font-family: var(--font-lexend);
+  font-weight: 400;
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+  opacity: 0.6;
+}
+
+
+/* Footer */
+
+footer {
+  text-align: center;
+}
