@@ -17,18 +17,17 @@
 }
 
 body {
-  max-width: 375px;
   background-color: var(--VeryDarkBlue);
-  color: var(--White);
   font-size: 15px;
-  margin: auto;
 }
 
 main.container {
+  max-width: 600px;
+  color: var(--White);
   background-color: var(--DarkDesaturatedBlue);
   text-align: center;
   border-radius: 10px 10px;
-  margin: 3rem 1rem;
+  margin: auto;
 }
 
 /* Section 1 (photo) */
@@ -101,3 +100,45 @@ p.text {
 footer {
   text-align: center;
 }
+
+@media (min-width: 769px) {
+
+
+  main.container {
+    margin: 0;
+    margin: auto;
+    /* padding: 0; */
+    max-width: 769px;
+    /* width: 769px; */
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  section.photo {
+    width: 50%;
+    height: auto;
+    border-radius: 0px 10px 10px 0px;
+}
+
+section.photo .color-overlay {
+  width: 100%;
+  height: 100%;
+}
+
+  section.insights {
+    margin: 0;
+    padding: 2rem;
+    padding-right: 4rem;
+    width: 50%;
+    height: 100%;
+    text-align: start;
+    border-radius: 0px;
+  }
+
+  .applications {
+    display: flex;
+  }
+
+  footer {
+    text-align: center;
+  }
